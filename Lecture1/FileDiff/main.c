@@ -3,7 +3,7 @@
 
 int main(int argc, char** argv)
 {
-	if(argv < 3)
+	if(argc < 3)
 	{
 		printf("Bad input format\n");
 		printf("Use: FileDiff.exe first_file_path second_file_path");
