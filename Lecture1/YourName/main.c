@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 
-
-
 int saveName(const char * filePath, const char* name)
 {
 	FILE* stream = fopen(filePath, "w");
@@ -12,6 +10,7 @@ int saveName(const char * filePath, const char* name)
 		return 1;
 	}
 	fprintf(stream, "My name is %s", name);
+	
 	fclose(stream);
 	
 	return 0;
@@ -46,7 +45,7 @@ int readName(const char * filePath, char* name)
 
 
 
-int main(int argv, char** argc)
+int main(int argc, char** argv)
 {
 	const char* path = "temp.dat";
 	char name[40];

@@ -5,6 +5,7 @@ int main (int argv, char** argc)
 {
 	if(argv < 2)
 	{
+	
 		printf("Please, specify input file");
 		return 1;
 	}
