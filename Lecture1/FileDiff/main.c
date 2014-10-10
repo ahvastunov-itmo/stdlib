@@ -1,9 +1,7 @@
 #include <stdio.h>
 
 
-
-
-int main(int argv, char** argc)
+int main(int argc, char** argv)
 {
 	if(argv < 3)
 	{
@@ -12,8 +10,8 @@ int main(int argv, char** argc)
 		return 1;
 	}
 	
-	char* firstFilePath = argc[1];
-	char* secondFilePath = argc[2];
+	char* firstFilePath = argv[1];
+	char* secondFilePath = argv[2];
 	
 	FILE* firstStream = fopen(firstFilePath, "r");
 	if(firstStream == NULL)
